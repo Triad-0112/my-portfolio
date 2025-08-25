@@ -47,9 +47,26 @@ Before you begin, make sure you have installed the following software:
         npm install
         ```
 
-4.  **Jalankan Server Pengembangan**
-    * Gunakan Vercel CLI untuk menjalankan server lokal yang meniru lingkungan production:
+4.  **Run the Development Server**
+    * Use Vercel CLI to run a local server that mimics the production environment:
         ```bash
-        vercel dev
+            vercel dev
         ```
-    * Buka browser Anda dan kunjungi `http://
+    * Open your browser and visit `http://localhost:3000`.
+
+## Project Structure
+
+```
+/
+├── main.py            # Main Flask application
+├── web/
+│   ├── static/        # CSS, JS, and image files
+│   └── templates/     # HTML template files
+├── package.json       # Frontend dependency (Tailwind)
+├── requirements.txt   # Backend dependency (Python)
+└── tailwind.config.js # Tailwind CSS configuration
+```
+
+## Deployment
+
+This project is configured for automatic deployment on [Vercel](https://vercel.com). Every `push` to the `main` branch will automatically trigger a new build and deployment.
