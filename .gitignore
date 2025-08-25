@@ -1,11 +1,26 @@
-# Python
+# Node.js
+/node_modules
+
+# Python Bytecode and Caches
 __pycache__/
 *.pyc
 *.pyo
 *.pyd
-.Python
-env/
+
+# Virtual Environment
 venv/
+env/
+
+# Dependency Caches
+.pip-cache/
+
+# IDE and Editor Files
+.vscode/
+.idea/
+
+# OS Files
+.DS_Store
+Thumbs.db
 
 # Vercel
 .vercel/
